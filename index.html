@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="brand_style">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-chat-3543025-2969412.png" width="70" />
+            <h2>WeChat</h2>
+            <span id="user_id" class="username"> </span>
+        </div>
+
+        <div class="message_area" id="message_area">
+            <!-- outgoing
+            incoming
+            -->
+        </div>
+        <div class="text_area">
+            <p class="message_error" id="message_error"></p>
+            <input name="message" id="textarea" autocomplete="off" value="" placeholder="Type Your Message.." />
+            <button onclick="send_message()">
+                <img src="https://cdn-icons-png.flaticon.com/512/660/660619.png" alt="">
+            </button>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
