@@ -33,12 +33,10 @@ const send_message = () => {
     message_error.innerText = error_code;
   } else {
     message_error.innerText = "";
-    sendMessage(message);
+    sendMessage(textarea.value);
     textarea.value = "";
   }
 };
-
-function decodeFun() {}
 
 const sendMessage = (message) => {
   let msg = {
